@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gym Practice Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏋️ Gym Practice Tracker</h1>
+    <form id="workout-form">
+      <label for="exercise">Exercise:</label>
+      <select id="exercise">
+        <option value="Push-ups">Push-ups</option>
+        <option value="Squats">Squats</option>
+        <option value="Deadlifts">Deadlifts</option>
+        <option value="Bench Press">Bench Press</option>
+      </select>
+
+      <label for="sets">Sets:</label>
+      <input type="number" id="sets" min="1" required />
+
+      <label for="reps">Reps per Set:</label>
+      <input type="number" id="reps" min="1" required />
+
+      <button type="submit">Add to Log</button>
+    </form>
+
+    <h2>Workout Log</h2>
+    <ul id="log"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
